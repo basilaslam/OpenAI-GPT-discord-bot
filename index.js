@@ -64,7 +64,7 @@ try{
         let command = message.slice(prefix.length).split(' ')[0];
         let question = message.slice(5,message.length+1);
         let errorMsg = ' 🤦  something went wrong recheck  the prompt before you send again'
-        if(command == 'gpt'){
+        if(command == 'askMe'){
             if(question.length > 1){
                 let data = await getCompletion(question);
                 if(question){
