@@ -26,7 +26,7 @@ async function getCompletion(prompt){
 
     const completion = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: `explain in english ${prompt}`,
+        prompt: `explain in english : ${prompt}`,
         temperature: 0.61,
         max_tokens: 999,
         top_p: 1,
